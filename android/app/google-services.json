@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71378562359",
+    "project_id": "todolist-gloify",
+    "storage_bucket": "todolist-gloify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71378562359:android:619b3827b25fd655fbbeb2",
+        "android_client_info": {
+          "package_name": "com.emptybox.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71378562359-fascltqdbqnf176od97usf0usc0k5enc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB5z3H6jE0ckxoyAzf_jLHp2Io4P-mjVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71378562359-fascltqdbqnf176od97usf0usc0k5enc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
