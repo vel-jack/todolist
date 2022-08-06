@@ -3,11 +3,11 @@
 Flutter Todo list app with Firebase back-end.
 
 - [ ]  UI
-    - [ ]  Splash screen
-    - [ ]  Login screen
-    - [ ]  Register screen
+    - [x]  Splash screen
+    - [x]  Login screen
+    - [x]  Register screen
     - [ ]  Home screen
-    - [ ]  Add todo screen
+    - [x]  Add todo screen
 - [ ]  Add firebase
 - [ ]  Login/Register logic
 - [ ]  Add todo
