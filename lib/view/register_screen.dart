@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todolist/utils/constants.dart';
 import 'package:todolist/view/login_screen.dart';
+import 'package:todolist/widgets/todo_logo.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -37,23 +38,7 @@ class _RegisterSceenState extends State<RegisterScreen> {
             key: formKey,
             child: Column(
               children: [
-                const SizedBox(
-                  height: 50,
-                ),
-                const Icon(
-                  Icons.check_circle,
-                  size: 60,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const Text(
-                  'Todo list',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
+                const TodoLogo(),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(

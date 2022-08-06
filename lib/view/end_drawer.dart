@@ -12,22 +12,34 @@ class EndDrawer extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 150,
             width: double.infinity,
+            height: 150,
             alignment: Alignment.bottomLeft,
-            color: kPrimayColor,
+            color: kPrimayColor.shade400,
             padding: const EdgeInsets.all(16.0),
-            child: Text(
-              '${authController.user!.email}',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                const Icon(
+                  Icons.check_circle,
+                  size: 60,
+                  color: Colors.white,
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  '${authController.user!.email}',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
           const ListTile(
-            leading: Icon(Icons.delete),
+            leading: Icon(Icons.delete_sweep),
             title: Text('Delete Completed Todos'),
           ),
           const Spacer(),

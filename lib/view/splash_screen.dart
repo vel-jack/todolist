@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todolist/controller/auth_controller.dart';
+import 'package:todolist/widgets/todo_logo.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -25,17 +26,7 @@ class _SplashState extends State<Splash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Icon(
-              Icons.check_circle,
-              size: 60,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              'Todo list',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
+            TodoLogo(),
             Padding(
               padding: EdgeInsets.all(8.0),
               child: SizedBox(

@@ -28,4 +28,8 @@ class Todo {
         'time': time,
         'date': date,
       };
+  @override
+  String toString() {
+    return '$todo - $date - $time - $isDone';
+  }
 }
