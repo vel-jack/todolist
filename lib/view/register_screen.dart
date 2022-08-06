@@ -12,13 +12,12 @@ class RegisterScreen extends StatefulWidget {
 
 class _RegisterSceenState extends State<RegisterScreen> {
   final formKey = GlobalKey<FormState>();
-  final nameController = TextEditingController();
+
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
   @override
   void dispose() {
-    nameController.dispose();
     emailController.dispose();
     passwordController.dispose();
     super.dispose();
@@ -39,7 +38,7 @@ class _RegisterSceenState extends State<RegisterScreen> {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 20,
+                  height: 50,
                 ),
                 const Icon(
                   Icons.check_circle,
@@ -54,27 +53,6 @@ class _RegisterSceenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(
                   height: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: TextFormField(
-                    controller: nameController,
-                    validator: (value) {
-                      value = value!.trim();
-                      if (value.isEmpty) {
-                        return 'Please enter name';
-                      } else {
-                        if (!regExForName.hasMatch(value)) {
-                          return 'Only alphabets and space accepted';
-                        }
-                      }
-                      return null;
-                    },
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                      label: Text('Name'),
-                    ),
-                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -128,7 +106,6 @@ class _RegisterSceenState extends State<RegisterScreen> {
                               if (formKey.currentState!.validate()) {
                                 debugPrint('Ok');
                                 final result = await authController.register(
-                                  nameController.text,
                                   emailController.text,
                                   passwordController.text,
                                 );

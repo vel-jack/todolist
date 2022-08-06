@@ -31,11 +31,12 @@ class AuthController extends GetxController {
     }
   }
 
-  Future<bool> register(String name, String email, String password) async {
+  Future<bool> register(String email, String password) async {
     try {
       _isAuthenticating.value = true;
       await firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
+
       _isAuthenticating.value = false;
       return true;
     } catch (e) {
@@ -49,8 +50,8 @@ class AuthController extends GetxController {
     await firebaseAuth.signOut();
   }
 
-  onAuthStateChanged(User? user) {
-    if (user == null) {
+  onAuthStateChanged(User? userx) {
+    if (userx == null) {
       Get.offAll(() => const LoginScreen());
     } else {
       Get.offAll(() => const HomeScreen());
