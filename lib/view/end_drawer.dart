@@ -46,9 +46,12 @@ class EndDrawer extends StatelessWidget {
             title: Text('Delete Completed Todos'),
           ),
           const Spacer(),
-          const ListTile(
-            leading: Icon(Icons.logout),
-            title: Text('Logout'),
+          ListTile(
+            onTap: () {
+              authController.signOut();
+            },
+            leading: const Icon(Icons.logout),
+            title: const Text('Logout'),
           ),
         ],
       ),
