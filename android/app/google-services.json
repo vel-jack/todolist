@@ -1,34 +1,77 @@
 {
   "project_info": {
-    "project_number": "71378562359",
-    "project_id": "todolist-gloify",
-    "storage_bucket": "todolist-gloify.appspot.com"
+    "project_number": "409224676470",
+    "project_id": "flutter-fcm-3c80c",
+    "storage_bucket": "flutter-fcm-3c80c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:71378562359:android:619b3827b25fd655fbbeb2",
+        "mobilesdk_app_id": "1:409224676470:android:a46a7ae54ae2fe821fcb57",
         "android_client_info": {
-          "package_name": "com.emptybox.todolist"
+          "package_name": "com.emptybox.fcm"
         }
       },
       "oauth_client": [
         {
-          "client_id": "71378562359-fascltqdbqnf176od97usf0usc0k5enc.apps.googleusercontent.com",
+          "client_id": "409224676470-v1uavie9j70nk122dt8ko4sv9aavbo48.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDB5z3H6jE0ckxoyAzf_jLHp2Io4P-mjVA"
+          "current_key": "AIzaSyC_qGy3BzuK25oAghKKuOAzPWfwrrn0iBQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "71378562359-fascltqdbqnf176od97usf0usc0k5enc.apps.googleusercontent.com",
+              "client_id": "409224676470-v1uavie9j70nk122dt8ko4sv9aavbo48.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "409224676470-36mtjhfidb2fs6sljiolo7gp287t93ks.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fcmDemo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409224676470:android:3cfb92d5d9d85fe11fcb57",
+        "android_client_info": {
+          "package_name": "com.emptybox.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409224676470-v1uavie9j70nk122dt8ko4sv9aavbo48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_qGy3BzuK25oAghKKuOAzPWfwrrn0iBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409224676470-v1uavie9j70nk122dt8ko4sv9aavbo48.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "409224676470-36mtjhfidb2fs6sljiolo7gp287t93ks.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fcmDemo"
+              }
             }
           ]
         }

@@ -53,10 +53,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDB5z3H6jE0ckxoyAzf_jLHp2Io4P-mjVA',
-    appId: '1:71378562359:android:619b3827b25fd655fbbeb2',
-    messagingSenderId: '71378562359',
-    projectId: 'todolist-gloify',
-    storageBucket: 'todolist-gloify.appspot.com',
+    apiKey: 'AIzaSyC_qGy3BzuK25oAghKKuOAzPWfwrrn0iBQ',
+    appId: '1:409224676470:android:3cfb92d5d9d85fe11fcb57',
+    messagingSenderId: '409224676470',
+    projectId: 'flutter-fcm-3c80c',
+    storageBucket: 'flutter-fcm-3c80c.appspot.com',
   );
 }

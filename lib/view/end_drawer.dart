@@ -38,9 +38,13 @@ class EndDrawer extends StatelessWidget {
               ],
             ),
           ),
-          const ListTile(
-            leading: Icon(Icons.delete_sweep),
-            title: Text('Delete Completed Todos'),
+          ListTile(
+            leading: const Icon(Icons.delete_sweep),
+            title: const Text('Delete Completed Todos'),
+            onTap: () {
+              todoController.deleteCompleted();
+              Scaffold.of(context).closeEndDrawer();
+            },
           ),
           const Spacer(),
           ListTile(
