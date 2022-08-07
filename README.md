@@ -2,17 +2,16 @@
 
 Flutter Todo list app with Firebase back-end.
 
-- [ ]  UI
+- [x]  UI
     - [x]  Splash screen
     - [x]  Login screen
     - [x]  Register screen
-    - [ ]  Home screen
-    - [x]  Add todo screen
-- [ ]  Add firebase
-- [ ]  Login/Register logic
-- [ ]  Add todo
-- [ ]  List todos
-- [ ]  Update and delete todo
-- [ ]  Create drawer with following functionality
-    - [ ]  Delete completed todo
-    - [ ]  Log out
+    - [x]  Home screen
+- [x]  Add firebase
+- [x]  Login/Register logic
+- [x]  Add todo
+- [x]  List todos
+- [x]  Update and delete todo
+- [x]  Create drawer with following functionality
+    - [x]  Delete completed todo
+    - [x]  Log out
